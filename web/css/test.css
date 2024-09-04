@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: #e5e5e5; /* Slightly grey background for better contrast */
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ddd;
+}
+header button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+header button:hover {
+    background-color: #00796b;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.messages {
+    flex: 1;
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+.input-area {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+form input {
+    flex: 1;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    outline: none;
+}
+form input:focus {
+    border-color: #009688;
+}
+form button {
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+}
+form button:hover {
+    background-color: #00796b;
+}
